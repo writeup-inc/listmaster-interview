@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="description" content="社内用｜リストマスター 対談台本 1.7（収録前確認あり）">
+<meta name="theme-color" content="#17202a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%279%27 fill=%27%2317202a%27/%3E%3Ccircle cx=%2716%27 cy=%2713%27 r=%275%27 fill=%27%23e8592f%27/%3E%3Crect x=%2711%27 y=%2720%27 width=%2710%27 height=%272.6%27 rx=%271.3%27 fill=%27%23fff%27/%3E%3C/svg%3E">
+<style>html{color-scheme:light dark}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>リストマスター 対談台本 1.7</title>
+<style>
+  :root{
+    --ink:#17202a;--muted:#66717d;--paper:#f5f4ef;--white:#fff;
+    --line:#d9d7cf;--accent:#e8592f;--accent-soft:#fff1ea;
+    --note:#fff8d8;--note-line:#d5a700;--chk:#b23b00;--chk-bg:#ffe9df;
+    --stage-bg:#eef2f6;--stage-line:#9fb2c4;--stage-ink:#2b3d4d;
+    --mark:#ffe95c;
+  }
+  :root:not([data-theme="light"]){}
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#eceae4;--muted:#9aa3ad;--paper:#14181c;--white:#1c2126;
+      --line:#333a41;--accent:#ff7c50;--accent-soft:#3a2318;
+      --note:#332c12;--note-line:#8a6f14;--chk:#ffb08a;--chk-bg:#3d2114;
+      --stage-bg:#1e262e;--stage-line:#3f5568;--stage-ink:#c6d4e0;
+      --mark:rgba(255,213,0,.34);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#eceae4;--muted:#9aa3ad;--paper:#14181c;--white:#1c2126;
+    --line:#333a41;--accent:#ff7c50;--accent-soft:#3a2318;
+    --note:#332c12;--note-line:#8a6f14;--chk:#ffb08a;--chk-bg:#3d2114;
+    --stage-bg:#1e262e;--stage-line:#3f5568;--stage-ink:#c6d4e0;
+    --mark:rgba(255,213,0,.34);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Noto Sans JP",sans-serif;line-height:1.85;letter-spacing:.018em}
+  .bar{background:var(--ink);color:var(--paper);font-size:12px;letter-spacing:.12em;text-align:center;padding:10px 18px}
+  .wrap{width:min(920px,calc(100% - 44px));margin:auto}
+  header{background:var(--white);border-bottom:1px solid var(--line);padding:68px 0 52px}
+  .eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+  h1{font-size:clamp(32px,5.5vw,60px);line-height:1.18;letter-spacing:-.05em;margin:16px 0 22px;word-break:keep-all;overflow-wrap:anywhere}
+  .lead{max-width:700px;font-size:16px;color:var(--muted);margin:0}
+  .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;font-size:12px;color:var(--muted)}
+  .meta span{border:1px solid var(--line);padding:5px 10px;background:var(--paper)}
+  main{padding:46px 0 84px}
+  .goal{background:var(--ink);color:var(--paper);padding:24px 26px;margin:0 0 40px}
+  .goal b{display:block;color:var(--accent);font-size:12px;letter-spacing:.1em;margin-bottom:8px}
+  .goal p{margin:0;font-size:15px}
+  .goal p+p{margin-top:10px}
+  section{margin-top:52px}
+  h2{font-size:clamp(23px,3.4vw,34px);line-height:1.35;letter-spacing:-.03em;margin:0 0 8px;word-break:keep-all;overflow-wrap:anywhere}
+  h2 .seg{display:inline-block}
+  .sub{color:var(--muted);font-size:12px;letter-spacing:.06em;margin:0 0 22px}
+  .dialogue{display:grid;gap:14px}
+  .turn{background:var(--white);border:1px solid var(--line);padding:20px 22px}
+  .turn.host{border-left:6px solid var(--accent)}
+  .turn.shiraishi{margin-left:40px;border-left:6px solid var(--ink)}
+  .speaker{font-size:12px;font-weight:800;letter-spacing:.08em;margin-bottom:6px}
+  .host .speaker{color:var(--accent)}
+  .turn p{margin:0}
+  .turn p+p{margin-top:11px}
+  .quote{border-left:6px solid var(--accent);background:var(--accent-soft);padding:22px 24px;margin:26px 0 0;font-size:clamp(16px,2.3vw,20px);font-weight:800;line-height:1.6}
+  .stage{background:var(--stage-bg);border-left:6px solid var(--stage-line);color:var(--stage-ink);padding:14px 18px;font-size:13px;margin-left:0}
+  .stage b{display:block;font-size:12px;letter-spacing:.12em;margin-bottom:4px}
+  .formula{background:var(--white);border:1px solid var(--line);padding:18px 20px;font-size:14px;overflow-x:auto}
+  .formula .row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-weight:800;letter-spacing:.02em}
+  .formula .row+.row{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+  .formula em{font-style:normal;border:1px solid var(--line);background:var(--paper);padding:4px 10px}
+  .formula em.hi{border-color:var(--accent);color:var(--accent)}
+  .formula .op{color:var(--muted)}
+  .formula .cap{margin:10px 0 0;font-size:12px;font-weight:400;color:var(--muted)}
+  .mk{background:linear-gradient(transparent 56%,var(--mark) 56%);font-weight:700;padding:0 1px}
+  .chk{display:inline-block;background:var(--chk-bg);color:var(--chk);border:1px solid currentColor;font-size:12px;font-weight:800;letter-spacing:.04em;padding:1px 7px;margin-left:4px;white-space:nowrap;vertical-align:.08em}
+  .codex{background:var(--note);border:1px dashed var(--note-line);padding:18px 20px;margin-top:44px;font-size:13px;color:var(--ink)}
+  .codex b{display:block;margin-bottom:6px;font-size:12px;letter-spacing:.1em}
+  .codex ul{margin:0;padding-left:18px}
+  .codex li+li{margin-top:6px}
+  .codex .top li{font-weight:700}
+  footer{border-top:1px solid var(--line);padding:26px 0 46px;color:var(--muted);font-size:12px}
+  @media(max-width:760px){
+    header{padding:48px 0 38px}main{padding-top:30px}
+    .turn.shiraishi{margin-left:0}.turn{padding:18px}section{margin-top:40px}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">INTERNAL DRAFT / 収録前確認あり</div>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">List Master 対談台本 / 1.7</div>
+    <h1>新規営業は、<br>誰に会うかで決まる。</h1>
+    <p class="lead">1.6の5ブロックの前に、導入を2つ足して7ブロックにしました。「最近売れている」という現場の事実から入り、売上の掛け算でリストの位置を先に決めてから、本論に入ります。白石さんの発言は1.6と同じく「結論＋理由＋具体的な場面」の3点セットで長さを保っています。</p>
+    <div class="meta"><span>西村 果林</span><span>白石 崇</span><span>2026-09-04</span><span>7ブロック／想定11〜13分</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="goal">
+    <b>1.6からの変更点</b>
+    <p>頭に2ブロック足しました。01は「最近リストマスターが売れている／営業しなくても現場の会話から売れていく／だからパッケージをSaaSに作り変えた」。02は売上の因数分解で、新規売上＝新規リード×受注率×単価、それぞれ1.5倍で3倍以上、さらに新規リード＝営業リスト×アポ率まで割って、リストが営業フローの最初の工程だと位置づけてから本論に入ります。</p>
+    <p>06に「朝9時に起きて、指示書を見て、新潟県のシステム開発会社を延々と探す」という一日の描写を追加。07に「精度は真面目な新卒の営業アシスタント並み。ただし人件費が桁で違う」という受け止め方の話を追加しました。</p>
+    <p>本文の黄色いマーカーは、AIと人の分業を言い表している6箇所です。この台本でいちばん残したい線なので、収録時はここを落とさないでください。数字と未実装の疑いがある機能には <span class="chk">要確認</span> を本文中に付けています。巻末の確認事項の上3件は、収録前に必ず潰す必要があるものです。</p>
+  </div>
+
+  <section>
+    <h2><span class="seg">「最近、</span><span class="seg">売れてるらしいですね」</span></h2>
+    <p class="sub">01 ── 売り込んでいないのに、現場の会話から決まっていく</p>
+    <div class="dialogue">
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>今日はリストマスターの話を聞きたくて来たんですけど、まず率直に。これ、最近売れてますよね。販売件数、明らかに増えてます。<span class="chk">要確認</span></p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>増えてるね。まあ、そうなるだろうなとは思ってたよ。営業活動をしている会社にとって、顧客リストって生命線だからね。そこが枯れたら、他が全部そろっていても数字は作れない。だからみんな、本当は困ってるんだよ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>意外だったのは、売れ方のほうで。うちが強く売り込んでいる商材ではないですよね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>そこなんだよ。特別に営業しているわけじゃなくて、商談の会話の中でたまたま名前が出て、現場の人に「それ、うちが欲しいやつです」って言われて決まってるらしいよ。売り込んで売れたんじゃなくて、聞かれて売れてる。</p>
+        <p>そういう売れ方をするものって、だいたい本物なんだよ。困りごとが先にあって、こっちが後から見つかってるということだからね。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>だから今回、パッケージ版からしっかりしたSaaS版に作り変えたんですね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>そうそう。パッケージのままだと、こっちで設定して渡す形になるから、どうしても手離れが悪いんだよ。使う側も、条件を変えたいときにいちいちこっちに言わないといけない。</p>
+        <p>SaaSにしておけば、お客さん自身がクリックするだけでAIにリスト生成を頼める。楽なんだよ、そのほうが。毎日使うものだからこそ、そこの一手間が効いてくるんだよね。</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="seg">「新規の売上は、</span><span class="seg">掛け算でできている」</span></h2>
+    <p class="sub">02 ── 1.5倍を3つ並べると、3倍を超える</p>
+    <div class="dialogue">
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>サービスの中身に入る前に、そもそもの話を聞かせてください。新規の売上って、白石さんはどう分解して見ているんですか。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>掛け算で見てるよ。新規の売上は、新規リードの数 × 受注率 × 単価。この3つしかない。<span class="chk">要確認</span></p>
+        <p>どれか1つがゼロなら、残りがどれだけ良くても売上はゼロ。逆に、3つとも少しずつ良くするのがいちばん効くんだよ。</p>
+      </article>
+    </div>
+
+    <div class="stage" style="margin-top:14px">
+      <b>ト書き／画面共有</b>
+      講演で使っている提案資料のうち、売上の分解を説明しているページをここで画面共有する想定。<span class="chk">ページ指定・要確認</span>
+    </div>
+
+    <div class="formula" style="margin-top:14px">
+      <div class="row"><em>新規の売上</em><span class="op">＝</span><em class="hi">新規リード</em><span class="op">×</span><em>受注率</em><span class="op">×</span><em>単価</em></div>
+      <div class="row"><em class="hi">新規リード</em><span class="op">＝</span><em class="hi">営業リスト</em><span class="op">×</span><em>アポ率</em></div>
+      <p class="cap">3つとも1.5倍にすると、1.5×1.5×1.5 で3倍を超える。この台本が扱うのは、いちばん左の「営業リスト」だけ。</p>
+    </div>
+
+    <div class="dialogue" style="margin-top:14px">
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>3つとも上げるのは、大変じゃないですか。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>それぞれ1.5倍でいいんだよ。掛け算だから、それで3倍を超える。倍にしろと言われたら無理だけど、1.5倍なら手が届くでしょ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>1.5倍を3つ。それなら現実的ですね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>で、いちばん左の「新規リード」を、もう一段割る。営業リスト × アポ率。これもまた掛け算なんだよ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>アポ率のほうは、何で上がるんですか。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>商品の魅力もあるし、伝え方もある。電話かメールかという手段の話もね。ただそこは、AIに架電させるとかメルマガを送らせるとか、別のサービスの話になっていく。<span class="chk">サービス名を出すか要確認</span></p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>じゃあ、残るのは。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>リストだよ。しかもリストは、毎日作り続けないと尽きるんだよ。今月ぶんを作って終わり、という性質のものじゃない。だから、そこを毎日AIにやらせようというのがリストマスターなんだよ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>営業フローの、いちばん最初の工程ですね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>昔は、若手の営業マンがそこを全部手でやってたんだよ。一日中検索して、名簿を作って。<span class="mk">それを今はAIがGoogleを検索して自動的に出してくる。</span>時代が変わったところだね。</p>
+        <p>だからBtoBで営業してる会社さんは、この話を聞くといちばん最初に反応するんだよ。フローの先頭が詰まってるのは、本人たちがいちばん分かってるからね。どんなに優秀な営業マンがいたって、当てるリストが無かったら受注は上がらないでしょ。営業部長は、だいたいここで悩んでるよ。</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="seg">「新規営業って、</span><span class="seg">何で決まるんですか」</span></h2>
+    <p class="sub">03 ── 打率は変えられない。変えられるのは2つだけ</p>
+    <div class="dialogue">
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>もう少し手前の話も聞かせてください。営業畑をずっと歩いてきた白石さんから見て、新規営業って、結局のところ何で決まるんですか。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>誰に会うか。ほぼそれだけだよ。会う相手さえ合っていれば、多少しゃべりが下手でも話は前に進むし、逆にどれだけ話が上手くても、いま困っていない会社に行ったら何も起きない。営業を長くやっていると、ここがいちばん身に沁みるところだね。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>え、トーク力とか提案力じゃないんですか。営業が強い会社って、切り返しが上手いとか、資料がきれいとか、そういうイメージなんですけど。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>もちろん磨いたほうがいいよ。うちも研修はやるし、ロープレもやる。ただね、100社にアプローチして実際に会えるのって、多くて数社でしょ。その打率って、10年やってるベテランと入社半年の子で、思ってるほど差がつかないんだよ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>そこ、変わらないんですか。……経験がそのまま数字になると思っていたので、けっこう衝撃なんですけど。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>上手い人は多少上がるよ。3%が4%になるくらいのことは起きる。<span class="chk">要確認</span> でも10倍にはならない。相手にも予算の都合があるし、タイミングもあるからね。こっちの技術でどうにかできる範囲は、思っているより狭いんだよ。</p>
+        <p>じゃあ何で差がつくかというと、そもそも何社に当たったかと、どういう相手に当たったか。突き詰めると、この2つしかない。さっきの掛け算でいえば、いちばん左をどう作るかという話だね。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>数を増やすか、当たる相手を変えるか。……あ、それってどっちもリストの話ですね。いま、トークの話が一つも出てきてない。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>そう。だからリストって、作業じゃなくて戦略なんだよ。今月どこに当たるかを決めた時点で、その月の数字はだいたい決まってる。決めたあとにどう頑張るかが営業だと思われがちだけど、順番は逆でね。決める前のほうが、はるかに効くんだよ。</p>
+      </article>
+    </div>
+    <div class="quote">打率は変えられない。変えられるのは、母数と、誰に当たるか。</div>
+  </section>
+
+  <section>
+    <h2><span class="seg">「いちばん大事な仕事が、</span><span class="seg">いちばん雑に扱われてる」</span></h2>
+    <p class="sub">04 ── なぜリストは後回しになるのか</p>
+    <div class="dialogue">
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>でも現実には、リスト作りって新人の仕事になりがちじゃないですか。手が空いてる人がやっといて、みたいな。どうしても軽く扱われている感じがあります。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>なりがちだね。よく考えると変な話でさ、いちばん結果を左右する仕事を、いちばん経験のない人に、いちばん時間のかかるやり方でやらせてるんだよ。しかも評価もされない。今月リストを何件作りましたって、褒められることはまず無いでしょ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>たしかに、作った件数で表彰された人って見たことないです。手で作ると、30社で4〜5時間かかるんでしたっけ。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>だいたいそれくらい。検索して、サイトを開いて、事業内容を読んで、電話番号と問い合わせ先を控えて、シートに貼って。1社5分で済んだとしても30社で2時間半、実際は迷うからもっとかかる。<span class="chk">要確認</span></p>
+        <p>しかもそれ、午前中の、いちばん頭が動く時間を持っていくんだよ。そこを全部使ったあとに、いい提案書なんて書けないよね。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>営業が忙しいって、実は「会うのに忙しい」んじゃなくて「探すのに忙しい」ということなんですね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>会ってる時間より探してる時間のほうが長い会社なんて、ザラにあるよ。本人は一日中働いてるから、ちゃんと忙しい。でも、今日は何社と話したのって聞くと、2社だったりするんだよ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>それ、経営者からすると怖いですね。人件費でいちばん高い人の時間が、検索に消えているということですよね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>で、探すのに疲れて、リストが尽きて、今月は動きが悪かったね、で終わる。よく「今月は調子が悪かった」って言うけど、調子の問題じゃないんだよ。<b>営業が止まるのって、気合いでも景気でもなくて、だいたい当てる先が無くなったときなんだよ。</b><span class="chk">言い回し要確認</span></p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="seg">「人が見つけられる会社は、</span><span class="seg">競合も見つけてる」</span></h2>
+    <p class="sub">05 ── 価格競争は、リストの時点で始まっている</p>
+    <div class="dialogue">
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>時間の話はよく分かりました。ただ裏を返すと、時間さえかければ、いいリストは作れるということですか。人手をかければ解決する話なのかなと。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>じゃあ聞くけどさ、西村さんがいまから手で30社ぶん作るとしたら、どうやって選ぶ？</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>業種とエリアで検索して、上から順に見ていって、ホームページがちゃんとしている会社を残して、あとは規模感で絞って……あ。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>気づいた？</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>みんな同じことをやってますね。同じ検索窓に、ほぼ同じ言葉を入れて、上から順に。競合の営業も、たぶん今日それをやってます。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>そう。<b>人が一生懸命探して見つけられる会社は、競合も同じように見つけてるんだよ。</b>検索の上に出てくるということは、要するに見つけやすいということだからね。そこに全員で行ってる。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>だから訪問した時点でもう3社目4社目で、話を始める前から比較されている。……値引きになる原因って、提案が弱いからじゃなくてリストなんですね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>そこなんだよ。<b>価格競争って、商談で始まってるんじゃなくて、リストを作った時点でもう始まってる。</b>同じ会社の名前を全員が持って回ってるんだから、最後は条件の話になるに決まってるよね。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>逆に、検索結果の下のほうに沈んでいる会社には、まだ誰も行っていないわけですよね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>行ってないよ。ちゃんと事業をやっていて、お金もあって、ただ発信が上手くないだけの会社って山ほどあるんだよ。営業をかけられ慣れてないから、話も普通に聞いてくれる。むしろ、そっちのほうがいいんだよ。競合がいないからね。</p>
+        <p>でも人の体力じゃ、そこまで掘れないでしょ。30社で半日かかってるのに、検索の10ページ目なんて誰も見ないよ。<span class="mk">だからそこは、AIに下のほうを調べてもらう。</span></p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>そこに行けたら、比較が始まる前に会えるということですか。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>営業でいちばん強いのは、いい提案でも安い価格でもなくて、1社目であることだからね。相見積もりの3社目で粘るより、まだ誰も来ていないところに最初に行くほうが、よっぽど楽なんだよ。</p>
+      </article>
+    </div>
+    <div class="quote">価格競争は、商談で始まるんじゃない。リストを作った時点で始まっている。</div>
+  </section>
+
+  <section>
+    <h2><span class="seg">「だから、</span><span class="seg">掘る場所を毎朝変えさせてる」</span></h2>
+    <p class="sub">06 ── ここで初めてリストマスターの話になる</p>
+    <div class="dialogue">
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>そこまで分かっていて、リストマスターを作ったんですよね。何を解決するために作ったんですか。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>いま話した全部だよ。人が掘れないところを、毎朝掘らせる。それだけ。うちの営業に一日中検索させていても仕方ないから、<span class="mk">探す仕事はAIに渡して、人は会いに行くところだけやればいい。</span>そういう分け方にしたかったんだよ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>実際、朝いちばんに何が起きてるんですか。一日の動きを教えてください。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>たとえば朝9時に設定しておくとするでしょ。9時になったら勝手に動き出して、まず指示書を見るんだよ。「今日は新潟県のシステム開発会社だな」って。そこからGoogleを延々と検索して、リストを作っていく。真面目な若手社員が一人、黙って座ってる感じだね。</p>
+        <p>やってる手順は、人がやるのとまったく同じだよ。<span class="mk">違うのは、疲れないことと、10ページ目まで行くこと。</span>それで1日100社くらい作ってくる。<span class="chk">件数・要確認</span></p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>作って終わり、ではないんですよね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>そこから先が面白くてね。メールアドレスが書いてあったら、ダメ元で営業メールを送っておく。FAX番号しか出ていない会社なら、ダメ元で「開発会社向けのオンラインセミナーをやります、よかったらどうぞ」って招待状を流しておく。<span class="chk">LP記載あり・要確認</span></p>
+        <p>連絡先が取れた会社の半分くらいには、そうやって一発目のノックだけ済ませて帰っていく、という感じだね。<span class="chk">LP記載あり・要確認</span></p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>探して、名簿にして、最初の一声までかけて帰るんですね。人がやると、そこまで体力が残らないやつです。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>残らないよ。探すだけで午前中が終わってるんだから。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>設計で一つ聞きたいことがあって。使う側、最初に条件を決めたら、そのあとは本当に何もしないじゃないですか。普通、今日はどこに当てるかを毎日選ばせたくなりませんか。そのほうが親切な気もして。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>なるよ。選べたほうが良さそうに見えるからね。でもね、人間側にタスクを残した瞬間、こういうものは止まるんだよ。毎朝5分の確認だとしても、忙しい日には飛ぶから。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>一回飛ばして、そのままやらなくなるやつですね。……私もあります。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>飛んだ日は母数ゼロだからね。最初の話に戻るけど、母数が止まったら営業は止まる。だから、あえて選ばせない。選べる楽しさより、止まらないことのほうが大事なんだよ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>ツールを入れるというより、担当者を一人置く感覚に近いですね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>そう思ってもらったほうが早いよ。月3万円だから、30日で割ると日給1,000円だよ。<span class="chk">価格・要確認</span> それで毎朝9時に動き出して、100社くらい調べて、報告して帰っていく。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>日給1,000円（笑）。最低賃金、余裕で割ってますね。<span class="chk">この表現を残すか要確認</span></p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>文句も言わないし、休まないし、辞めないしね。<span class="mk">人がやったら4〜5時間かかる仕事を、こっちが寝てる間に終わらせてる。</span>この一人を雇うかどうか、という話だと思ってもらえればいいよ。</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="seg">「条件は、</span><span class="seg">狭くていい」</span></h2>
+    <p class="sub">07 ── 使い方の勘どころとクロージング</p>
+    <div class="dialogue">
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>実際に入れた会社が、いちばんつまずくのってどこですか。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>条件を広げすぎること。これがいちばん多い。件数をたくさん出したくなるから、業種もエリアもどんどん広げちゃうんだよ。そうすると、誰でも思いつくような会社が混ざってくる。さっきの、全員が持ってるリストに戻っちゃうんだよね。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>あー、件数が多いほうが得した気になりますもんね。私も絶対やります。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>狭くていいんだよ。いま取れているお客さんと同じ業種、同じ規模、同じ地域から始める。売れた理由がもう分かってる相手だからね。そこで反応を見て、良さそうなら少しずつずらしていく。最初から広く取るのが、いちばん遠回りなんだよ。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>精度もよく聞かれるらしいです。もう廃業している会社とか、明らかに的外れな企業が混ざらないかって。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>先に正直なところを言っておくとね、条件さえ入れれば完璧なリストが出てくる、という話ではないんだよ。AIも曖昧なところは自分で判断するからね。真面目な新卒の営業アシスタントが一人いる、くらいのつもりで見てもらったほうがいい。</p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>期待値の置きどころとしては、すごく分かりやすいです。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>で、その新卒を本当に一人雇うと、給料が月に二十数万でしょ。社会保険や労務費まで入れたら、もっとかかる。<span class="chk">金額・要確認</span></p>
+        <p>こっちは日給1,000円で、何時間でも黙って動いて、100社200社と作ってくる。同じ仕事をさせて桁が違うんだから、そこがすごいところだよね。<span class="chk">件数・要確認</span></p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>そのうえで、明らかにおかしい会社は落ちるんですよね。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>明らかに動いていない会社や重複は落としてるよ。ただ正直に言うと、精度100%のリストなんて世の中に無いからね。人が手で作ったって、電話したら「その部署はもうありません」なんて普通にある。</p>
+        <p>だから割り切ったほうがいい。<b class="mk">作るのはAI、確かめるのは反応があった数社だけ。</b><span class="mk">会って確かめるところは、結局のところ人の仕事だからね。</span></p>
+      </article>
+      <article class="turn host">
+        <div class="speaker">西村</div>
+        <p>最後に、話を聞いて気になった会社は、何から始めればいいですか。</p>
+      </article>
+      <article class="turn shiraishi">
+        <div class="speaker">白石</div>
+        <p>エリアと業種だけ、口で言ってみてほしい。その場でリストを出すので、中身を見てから決めてもらえれば十分です。分厚い資料を読み込む必要も、先に社内で議論する必要もないよ。<span class="chk">導線・要確認</span></p>
+        <p>朝起きたら、今日会う相手がもう決まってる。あの状態を一度知ると、たぶんもう手では探さなくなると思うよ。</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="codex">
+    <b>収録前の確認事項</b>
+    <ul class="top">
+      <li>【最優先】06のメール／FAXによる初期営業は、公開中のLP（eigyolist.figma.site）に「メール or FAXを自動送付」「初回アプローチ100%実行」と明記されている。実装済みという理解でよいか。LPが先行しているだけなら、このくだりは丸ごと落とす。</li>
+      <li>【最優先】1日の生成件数が食い違っている。この台本は「100社」、公開中のLPは「毎日300〜350件」。LPは対外公開済みなので、台本を300〜350件へ揃えるのが自然に見える。どちらを正とするか。</li>
+      <li>【最優先】01の「販売件数が増えている」を対外で言ってよいか。件数・期間を出すか、ぼかすか。</li>
+    </ul>
+    <ul style="margin-top:10px">
+      <li>04の「手で作ると30社で4〜5時間」は、LPの「リスト作成に毎日2〜4時間」「人手では1日30〜50件が限界」と噛み合っていない。どちらの体感で話すか</li>
+        <li>LPにある「毎朝11時に実績レポートを自動送信」を、06の一日の描写に足すか。いまは入れていない</li>
+        <li>LPは価格を出していない。台本の「月3万円／日給1,000円」を対談で言ってよいか</li>
+        <li>02の分解式「新規リード × 受注率 × 単価」でよいか。提案数・商談数を別項として立てるかどうか</li>
+      <li>02の「1.5倍を3つで3倍以上」の言い方（実際は3.375倍）。この表現のままでよいか</li>
+      <li>02で触れているAI架電・AIメルマガを、実際のサービス名で出すか、匿名のままにするか</li>
+      <li>02の画面共有：講演資料の該当ページ番号を指定する</li>
+      <li>01のパッケージ版→SaaS版の言い方。既存のパッケージ利用者への配慮が要るか</li>
+      <li>07の「新卒の給料は月に二十数万」を出してよいか。労務費込みの言い方に寄せるか</li>
+      <li>03の営業論（打率は変わらない／変えられるのは母数と誰に当たるか）を、白石さんの実際の言い方に合わせて調整</li>
+      <li>03の「3%が4%になる」の数字を出してよいか。感覚値なら言い回しを変える</li>
+      <li>04の「営業が止まるのは当てる先が無くなったとき」を本人の言葉で言い直してもらう</li>
+      <li>04の「1社5分×30社」の内訳が、実際の作業感に合っているか確認</li>
+      <li>「今月20〜30件」は今回も入れていません。冒頭に戻すかどうか</li>
+      <li>月額3万円の条件と初期費用の案内（税抜表記・ひとり社長応援割との差）</li>
+      <li>条件設定の仕様（狭く取る前提でよいか／複数条件・変更可否）</li>
+      <li>「最低賃金を割ってる」を残してよいか</li>
+      <li>クロージングの「その場でリストが出る」を受ける導線（商談・短尺動画・LP）</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">社内用｜価格・機能・数字の確認前は外部公開しないでください。</div>
+</footer>
+
+</body>
+</html>
